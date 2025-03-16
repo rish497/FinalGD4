@@ -408,4 +408,4 @@ position = Vector2(-428, 8)
 shape = SubResource("WorldBoundaryShape2D_imeas")
 
 [node name="Area2D" parent="." instance=ExtResource("7_iaaix")]
-position = Vector2(-71, -369)
+position = Vector2(-309, -343)

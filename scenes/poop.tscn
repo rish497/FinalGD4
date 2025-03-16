@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://btqdh5rvh71do"]
+[gd_scene load_steps=7 format=3 uid="uid://btqdh5rvh71do"]
 
 [ext_resource type="Texture2D" uid="uid://gm1ne684xq6l" path="res://Assets/poop sprite (2).png" id="1_myiya"]
-[ext_resource type="Script" path="res://code/poop.gd" id="1_xseg3"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6lxlg"]
 atlas = ExtResource("1_myiya")
@@ -36,7 +35,6 @@ animations = [{
 size = Vector2(92, 98)
 
 [node name="Area2D" type="Area2D"]
-script = ExtResource("1_xseg3")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gis7m")
