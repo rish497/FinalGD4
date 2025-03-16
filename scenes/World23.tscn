@@ -452,13 +452,10 @@ autoplay = true
 position = Vector2(-225, -90)
 
 [node name="Area2D2" parent="." instance=ExtResource("8_jevjh")]
-position = Vector2(-189, -90)
-
-[node name="Area2D3" parent="." instance=ExtResource("8_jevjh")]
-position = Vector2(-154, -90)
+position = Vector2(-159, -90)
 
 [node name="Area2D4" parent="." instance=ExtResource("8_jevjh")]
-position = Vector2(-113, -90)
+position = Vector2(-91, -91)
 
 [node name="Area2D5" parent="." instance=ExtResource("8_jevjh")]
 position = Vector2(-21, -219)
@@ -485,13 +482,10 @@ position = Vector2(1932, -491)
 position = Vector2(2909, -585)
 
 [node name="Area2D13" parent="." instance=ExtResource("8_jevjh")]
-position = Vector2(2958, -585)
+position = Vector2(2971, -585)
 
 [node name="Area2D14" parent="." instance=ExtResource("8_jevjh")]
-position = Vector2(3006, -585)
-
-[node name="Area2D15" parent="." instance=ExtResource("8_jevjh")]
-position = Vector2(3053, -585)
+position = Vector2(3036, -585)
 
 [node name="Area2D16" parent="." instance=ExtResource("8_jevjh")]
 position = Vector2(3107, -585)
