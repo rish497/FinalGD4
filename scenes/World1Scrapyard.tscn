@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bpx6rtwv46086"]
+[gd_scene load_steps=15 format=3 uid="uid://bpx6rtwv46086"]
 
 [ext_resource type="Texture2D" uid="uid://raywrxfb2nmj" path="res://Assets/TileSet v1.0.png" id="1_k0ejv"]
 [ext_resource type="Texture2D" uid="uid://bo4ht8ajlynup" path="res://Assets/Tileset/Tileset/tileset.png" id="2_7fobr"]
@@ -6,7 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://bjgk71l0ca2ev" path="res://scenes/Skibidi.tscn" id="4_65xnt"]
 [ext_resource type="AudioStream" uid="uid://cqu8l0wmlq8t5" path="res://Skibidi Toilet Full Song Music Video [TubeRipper.com].mp3" id="5_1tclu"]
 [ext_resource type="PackedScene" uid="uid://b1ewppknhfbxb" path="res://scenes/k_illzone.tscn" id="6_u4uli"]
-[ext_resource type="PackedScene" uid="uid://btqdh5rvh71do" path="res://scenes/poop.tscn" id="7_iaaix"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_ad1jp"]
 tile_data = PackedInt32Array(0, 2, 0, 65536, 2, 2, 131072, 2, 2, 196608, 2, 2, 262144, 2, 2, 327680, 2, 2, 393216, 2, 2, 458752, 2, 2, 524288, 2, 4, 1, 131074, 0, 65537, 131074, 2, 131073, 131074, 2, 196609, 131074, 2, 262145, 131074, 2, 327681, 131074, 2, 393217, 131074, 2, 458753, 131074, 2, 524289, 131074, 4, 2, 262146, 0, 65538, 262146, 2, 131074, 262146, 2, 196610, 262146, 2, 262146, 262146, 2, 327682, 262146, 2, 393218, 262146, 2, 458754, 262146, 2, 524290, 262146, 4)
@@ -406,6 +405,3 @@ autoplay = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KIllzone"]
 position = Vector2(-428, 8)
 shape = SubResource("WorldBoundaryShape2D_imeas")
-
-[node name="Area2D" parent="." instance=ExtResource("7_iaaix")]
-position = Vector2(-71, -369)
