@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://15liv3u4poir"]
+
+[ext_resource type="Texture2D" uid="uid://cfbv7dpl1w2fm" path="res://Assets/image (4).png" id="1_hbtj1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Window" type="Window" parent="."]
+initial_position = 1
+size = Vector2i(345, 155)
+
+[node name="Camera2D" type="Camera2D" parent="Window"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Window/Camera2D"]
+texture = ExtResource("1_hbtj1")
