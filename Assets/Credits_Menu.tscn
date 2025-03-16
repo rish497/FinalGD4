@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bly8sxsmfdla5"]
+[gd_scene load_steps=10 format=3 uid="uid://bly8sxsmfdla5"]
 
 [ext_resource type="Texture2D" uid="uid://dqf3k3ctepdt0" path="res://Assets/Your paragraph text.png" id="1_6smuv"]
 [ext_resource type="Script" path="res://Code/main_menu.gd" id="1_bt6pk"]
 [ext_resource type="FontFile" uid="uid://v6gvpnbkbnxb" path="res://Assets/minecraft-font/MinecraftBoldItalic-1y1e.otf" id="2_pbksm"]
 [ext_resource type="FontFile" uid="uid://te5m4qchxsbd" path="res://Assets/minecraft-font/MinecraftRegular-Bmg3.otf" id="3_ki860"]
+[ext_resource type="AudioStream" uid="uid://cqu8l0wmlq8t5" path="res://Skibidi Toilet Full Song Music Video [TubeRipper.com].mp3" id="5_dpq32"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7p03"]
 texture = ExtResource("1_6smuv")
@@ -107,5 +108,11 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_svxcf")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_3pa0s")
 theme_override_styles/normal = SubResource("StyleBoxFlat_1na1h")
 text = "Main Menu"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_dpq32")
+volume_db = 5.205
+pitch_scale = 1.45
+autoplay = true
 
 [connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]
