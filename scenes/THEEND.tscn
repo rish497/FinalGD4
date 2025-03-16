@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://o6ap4vi3qku2"]
+
+[ext_resource type="FontFile" uid="uid://v6gvpnbkbnxb" path="res://Assets/minecraft-font/MinecraftBoldItalic-1y1e.otf" id="1_4y1o8"]
+[ext_resource type="Texture2D" uid="uid://c6hpsgumn4soc" path="res://Assets/skibidi-toilet-attack-and-defense (1).png" id="1_tvhic"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bjvic"]
+texture = ExtResource("1_tvhic")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color(0.854902, 0.0313726, 1, 0.403922)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_bjvic")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -308.0
+offset_top = -62.0
+offset_right = 124.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.44, 1.44)
+theme_override_fonts/font = ExtResource("1_4y1o8")
+theme_override_font_sizes/font_size = 94
+text = "THE END"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

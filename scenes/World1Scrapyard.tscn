@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bpx6rtwv46086"]
+[gd_scene load_steps=23 format=3 uid="uid://bpx6rtwv46086"]
 
 [ext_resource type="Texture2D" uid="uid://raywrxfb2nmj" path="res://Assets/TileSet v1.0.png" id="1_k0ejv"]
 [ext_resource type="Texture2D" uid="uid://ckpfbt2fst0y2" path="res://Assets/download.jpg" id="1_xytkg"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bjgk71l0ca2ev" path="res://scenes/Skibidi.tscn" id="4_65xnt"]
 [ext_resource type="AudioStream" uid="uid://cqu8l0wmlq8t5" path="res://Skibidi Toilet Full Song Music Video [TubeRipper.com].mp3" id="5_1tclu"]
 [ext_resource type="PackedScene" uid="uid://b1ewppknhfbxb" path="res://scenes/k_illzone.tscn" id="6_u4uli"]
+[ext_resource type="PackedScene" uid="uid://15liv3u4poir" path="res://scenes/Popup.tscn" id="7_o2qs3"]
 [ext_resource type="PackedScene" uid="uid://btqdh5rvh71do" path="res://scenes/poop.tscn" id="7_uv65q"]
 [ext_resource type="Texture2D" uid="uid://76y7qlyvlsg1" path="res://Assets/Door02.png" id="9_1hara"]
 [ext_resource type="Script" path="res://Code/teleportworld2.gd" id="9_smo3d"]
@@ -455,5 +456,7 @@ texture = ExtResource("9_1hara")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2(2419.5, -428)
 shape = SubResource("RectangleShape2D_xki6j")
+
+[node name="Node2D" parent="." instance=ExtResource("7_o2qs3")]
 
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered"]
