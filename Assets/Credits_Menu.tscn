@@ -1,0 +1,111 @@
+[gd_scene load_steps=9 format=3 uid="uid://bly8sxsmfdla5"]
+
+[ext_resource type="Texture2D" uid="uid://dqf3k3ctepdt0" path="res://Assets/Your paragraph text.png" id="1_6smuv"]
+[ext_resource type="Script" path="res://Code/main_menu.gd" id="1_bt6pk"]
+[ext_resource type="FontFile" uid="uid://v6gvpnbkbnxb" path="res://Assets/minecraft-font/MinecraftBoldItalic-1y1e.otf" id="2_pbksm"]
+[ext_resource type="FontFile" uid="uid://te5m4qchxsbd" path="res://Assets/minecraft-font/MinecraftRegular-Bmg3.otf" id="3_ki860"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r7p03"]
+texture = ExtResource("1_6smuv")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_svxcf"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3pa0s"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1na1h"]
+bg_color = Color(0.404511, 0.404511, 0.404511, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.427493, 0.427493, 0.427493, 0.6)
+
+[node name="CreditsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bt6pk")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_r7p03")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_top = -3.0
+offset_right = 568.0
+offset_bottom = 150.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_pbksm")
+theme_override_font_sizes/font_size = 100
+text = "Credits:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -568.0
+offset_top = -181.0
+offset_right = 568.0
+offset_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ki860")
+theme_override_font_sizes/font_size = 70
+text = "Rishabh M.
+
+Henry Z.
+
+Summer G."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main Menu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -256.5
+offset_top = -74.0
+offset_right = 256.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ki860")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_svxcf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_svxcf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3pa0s")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1na1h")
+text = "Main Menu"
+
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://btqdh5rvh71do"]
+[gd_scene load_steps=8 format=3 uid="uid://btqdh5rvh71do"]
 
 [ext_resource type="Texture2D" uid="uid://gm1ne684xq6l" path="res://Assets/poop sprite (2).png" id="1_myiya"]
+[ext_resource type="PackedScene" uid="uid://b1ewppknhfbxb" path="res://scenes/k_illzone.tscn" id="2_1o16l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6lxlg"]
 atlas = ExtResource("1_myiya")
@@ -32,15 +33,18 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m0brg"]
-size = Vector2(92, 98)
+size = Vector2(66.667, 58.3336)
 
 [node name="Area2D" type="Area2D"]
+scale = Vector2(0.119999, 0.119999)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_gis7m")
 autoplay = "default"
 frame_progress = 0.648499
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3, 16)
+[node name="KIllzone" parent="." instance=ExtResource("2_1o16l")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KIllzone"]
+position = Vector2(0, 29.1668)
 shape = SubResource("RectangleShape2D_m0brg")
